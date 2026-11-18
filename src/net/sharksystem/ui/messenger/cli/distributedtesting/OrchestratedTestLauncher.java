@@ -143,7 +143,7 @@ class OrchestratedTestLauncher extends Thread {
         // e.g. openTCP 2222;
         sb.append(OrchestratedTestLauncher.scriptStartOrchestrator_SyncWithPeers);
         //// wait for each peer to settle
-        for (int peerIndex = 0; peerIndex < this.test2run.scripts.size(); peerIndex++) {
+        for (int peerIndex = 0; peerIndex < this.test2run.peerScripts.size(); peerIndex++) {
             // block peerSettled_cs1_#0_1; ... for up to n peers... block peerSettled_cs1_#0_n;
             sb.append(CommandNames.CLI_BLOCK);
             sb.append(TestLanguageCompiler.CLI_SPACE);
@@ -181,8 +181,8 @@ class OrchestratedTestLauncher extends Thread {
         String orchestratorScript = sb.toString();
 
         //// produce script for each peer
-        String[] effectiveScripts = new String[this.test2run.scripts.size()];
-        for (int peerIndex = 0; peerIndex < this.test2run.scripts.size(); peerIndex++) {
+        String[] effectiveScripts = new String[this.test2run.peerScripts.size()];
+        for (int peerIndex = 0; peerIndex < this.test2run.peerScripts.size(); peerIndex++) {
             sb = new StringBuilder();
             //// set time bomb to avoid orphan processes - value is set in test case description file
             // e.g. timeBomb 120000;
@@ -216,7 +216,7 @@ class OrchestratedTestLauncher extends Thread {
              */
 
             // add to peer script and finish with exit in case test developer forgot
-            effectiveScripts[peerIndex] = sb.toString() + this.test2run.scripts.get(peerIndex) + scriptEnd_Exit;
+            effectiveScripts[peerIndex] = sb.toString() + this.test2run.peerScripts.get(peerIndex) + scriptEnd_Exit;
         }
 
         // run orchestrator script first - wait to collect logs

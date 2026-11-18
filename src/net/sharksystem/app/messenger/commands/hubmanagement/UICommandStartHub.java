@@ -6,7 +6,7 @@ import net.sharksystem.ui.messenger.cli.SharkNetMessengerUI;
 import net.sharksystem.ui.messenger.cli.UICommand;
 import net.sharksystem.app.messenger.commands.commandarguments.UICommandBooleanArgument;
 import net.sharksystem.app.messenger.commands.commandarguments.UICommandIntegerArgument;
-import net.sharksystem.ui.messenger.cli.commandarguments.UICommandQuestionnaire;
+import net.sharksystem.app.messenger.commands.commandarguments.UICommandQuestionnaire;
 
 import java.io.IOException;
 import java.util.List;

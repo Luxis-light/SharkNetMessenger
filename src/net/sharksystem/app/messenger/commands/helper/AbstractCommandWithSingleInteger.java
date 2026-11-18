@@ -1,10 +1,10 @@
 package net.sharksystem.app.messenger.commands.helper;
 
 import net.sharksystem.app.messenger.commands.commandarguments.UICommandIntegerArgument;
+import net.sharksystem.app.messenger.commands.commandarguments.UICommandQuestionnaire;
 import net.sharksystem.ui.messenger.cli.SharkNetMessengerApp;
 import net.sharksystem.ui.messenger.cli.SharkNetMessengerUI;
 import net.sharksystem.ui.messenger.cli.UICommand;
-import net.sharksystem.ui.messenger.cli.commandarguments.UICommandQuestionnaire;
 
 import java.util.List;
 

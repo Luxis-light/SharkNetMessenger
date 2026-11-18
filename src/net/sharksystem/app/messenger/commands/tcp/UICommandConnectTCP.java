@@ -92,7 +92,7 @@ public class UICommandConnectTCP extends UICommand {
     }
 
     @Override
-    protected net.sharksystem.ui.messenger.cli.commandarguments.UICommandQuestionnaire specifyCommandStructure() {
+    protected UICommandQuestionnaire specifyCommandStructure() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'specifyCommandStructure'");
     }

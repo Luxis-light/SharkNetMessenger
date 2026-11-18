@@ -7,7 +7,7 @@ import net.sharksystem.ui.messenger.cli.SharkNetMessengerApp;
 import net.sharksystem.ui.messenger.cli.SharkNetMessengerUI;
 import net.sharksystem.ui.messenger.cli.UICommand;
 import net.sharksystem.app.messenger.commands.commandarguments.UICommandBooleanArgument;
-import net.sharksystem.ui.messenger.cli.commandarguments.UICommandQuestionnaire;
+import net.sharksystem.app.messenger.commands.commandarguments.UICommandQuestionnaire;
 
 /**
  * This command starts executing all commands given by a String
